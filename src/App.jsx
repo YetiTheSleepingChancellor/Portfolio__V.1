@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
+import Header from './header/Header';
 import './App.css';
 
-function app() {
+function App() {
   return (
     <>
       <Header/>
@@ -10,4 +10,4 @@ function app() {
   );
 }
 
-export default app;
+export default App;

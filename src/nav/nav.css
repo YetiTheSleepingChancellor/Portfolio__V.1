@@ -1,0 +1,19 @@
+nav ul {
+    display: flex;
+    flex-direction: inherit;
+}
+
+nav.row {
+    flex-direction: row;
+}
+
+nav.column {
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    nav {
+        display: none;
+    }
+
+}
