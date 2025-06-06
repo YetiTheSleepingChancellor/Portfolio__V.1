@@ -1,23 +1,37 @@
-button {                
-    display: none;
-}
-
-.hamburger:hover {
-    background-color: #000;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-@media (min-width: 768px) {
-    nav , button {
-        display: flex;
+    button {                
+        display: none;
     }
 
     .hamburger {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .hamburger:hover {
+        background-color: #000;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .desktopNav {
         display: none;
     }
-}
 
-nav.row {
-    display: none   
-}
+    .mobileNav {
+        padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+        button {
+            display: flex;
+        }
+
+        .hamburger {
+            display: none
+        }
+
+        .desktopNav {
+            display: flex;
+        }
+
+    }

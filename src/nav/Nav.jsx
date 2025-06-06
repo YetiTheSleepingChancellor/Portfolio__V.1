@@ -1,25 +1,22 @@
 import React from 'react';
 
-function Nav({direction}) {
+function Nav({direction = 'row', display = 'flex', className = ''}) {
 
-    const ulStyle = {
-        gap: '20px',
-        listStyle: 'none',
-        display: 'flex',
-    };
+    const navStyle = {
+        display: display,
+        flexDirection: direction,
+        gap: '20px'
 
-    const aStyle = {
-        fontWeight: '400',
-    };
+    }
 
     return  (
-        <nav className={`nav${direction}`}>
-            <ul style={ulStyle}>
-                <li><a href="#" style={aStyle}>Home</a></li>
-                <li><a href="#" style={aStyle}>About</a></li>
-                <li><a href="#" style={aStyle}>Skills</a></li>
-                <li><a href="#" style={aStyle}>Projects</a></li>
-                <li><a href="#" style={aStyle}>Contact</a></li>
+        <nav className={className}>
+            <ul style={navStyle}>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     )
