@@ -1,12 +1,16 @@
 import React from 'react';
+import Button from './Button.jsx';
 
 function Header() {
     const HeaderStyle = {
-        
+        backgroundColor: '#333',
+        display: 'flex',
+        width: '100%',
+        height: '56px',
     };
 
     return (
-        <header>
+        <header style={HeaderStyle}>
             <div>SandipDev</div>
             <nav>
                 <ul>
@@ -18,11 +22,11 @@ function Header() {
                 </ul>
             </nav>
 
-            
+            <button className="btn-CV">Download CV</button>
         </header>
     )
 
 
 }
 
-export Header from Header;
+export default Header;

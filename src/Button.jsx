@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Button() {
-    const ButtonStyle = {
-
-    }
-
+function Button({ children, onClick, type = 'button', className = ''}) {
     return (
-        <button type={type} onclick={onclick} className="{"></button>
-    )
+        <button type={type} onClick={onClick} className={'btn ${className}'}>
+            {children}
+        </button>
+    );
 }
+
+export default Button;
