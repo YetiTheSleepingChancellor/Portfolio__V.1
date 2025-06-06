@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yetithesleepingchancellor.github.io/portfolio-v-1",
+  "homepage": "https://yetithesleepingchancellor.github.io/Portfolio__V.1/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
