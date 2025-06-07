@@ -1,7 +1,3 @@
-    button {                
-        display: none;
-    }
-
     .hamburger {
         padding: 5px 10px;
         cursor: pointer;
@@ -15,10 +11,19 @@
 
     .desktopNav {
         display: none;
+        flex-direction: column;
     }
 
     .mobileNav {
         padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mobileNav ul li a {
+        color: #333;
     }
 
     @media (min-width: 768px) {
@@ -27,11 +32,13 @@
         }
 
         .hamburger {
-            display: none
+            display: none;
         }
 
         .desktopNav {
             display: flex;
+            flex-direction: row;
+            gap: 40px;
         }
 
     }
